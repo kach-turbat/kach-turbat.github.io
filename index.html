@@ -17,7 +17,8 @@ main{max-width:720px;margin:-28px auto 0;padding:0 16px 32px}
 ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
 li{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:0 2px 10px rgba(30,58,138,.07)}
 li.latest{border-color:var(--blue);box-shadow:0 6px 24px rgba(29,78,216,.18)}
-li img{display:block;width:100%;max-width:300px;height:auto;border-radius:12px;margin:0 auto 14px}
+.pic{display:block;width:100%;max-width:300px;margin:0 auto 14px}
+li img{display:block;width:100%;max-width:300px;height:auto;border-radius:12px;margin:0 auto}
 .meta{display:inline-block;margin:0 0 8px;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;background:var(--blue-l);color:var(--blue)}
 li.latest .meta{background:var(--blue);color:#fff}
 .name{margin:0 0 14px;font-size:19px;font-weight:700;line-height:1.3}
@@ -25,7 +26,7 @@ li.latest .meta{background:var(--blue);color:#fff}
 .btn:hover,.btn:focus-visible{background:var(--blue-d)}
 footer{max-width:720px;margin:0 auto;padding:0 16px 40px}
 .note{margin:0;padding:14px 16px;background:var(--blue-l);border:1px solid var(--line);border-radius:12px;color:var(--mute);font-size:14px;text-align:center}
-@media(min-width:640px){li.latest{display:grid;grid-template-columns:300px 1fr;gap:0 24px;align-items:center}li.latest img{grid-row:1/4;margin:0}li.latest .meta{justify-self:start;align-self:end}li.latest .name{align-self:center}li.latest .btn{align-self:start}.name{font-size:21px}}
+@media(min-width:640px){li.latest{display:grid;grid-template-columns:300px 1fr;gap:0 24px;align-items:center}li.latest .pic{grid-row:1/4;margin:0}li.latest .meta{justify-self:start;align-self:end}li.latest .name{align-self:center}li.latest .btn{align-self:start}.name{font-size:21px}}
 </style>
 </head>
 <body>
@@ -36,11 +37,11 @@ footer{max-width:720px;margin:0 auto;padding:0 16px 40px}
 </header>
 <main>
 <ul>
-<li id="liners" class="latest"><img src="liners.jpg" alt="Still from our video showing air fryer liners inside an air fryer basket" width="300" height="317"><p class="meta">From the latest video</p><p class="name">Roe Tenpo Air Fryer Liners, 100 sheets</p><a class="btn" href="https://link.amazon/B00vELJEP" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
-<li id="dehumidifier"><p class="meta">Video coming soon</p><p class="name">ANSIO Dehumidifier, pack of 10</p><a class="btn" href="https://link.amazon/B07TpjWH4" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
-<li id="washing-machine-cleaner"><p class="meta">Video coming soon</p><p class="name">Dr. Beckmann Service-it Deep Clean washing machine cleaner, 250 g</p><a class="btn" href="https://link.amazon/B03H61PQs" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
-<li id="vacuum-bags"><p class="meta">Video coming soon</p><p class="name">Amazon Basics vacuum storage bags, medium, 5-pack</p><a class="btn" href="https://link.amazon/B03OlZ3aH" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
-  <li id="glowhite"><p class="meta">Video live now</p><p class="name">Dr. Beckmann Glowhite in-wash sachets, 5 x 40 g</p><a class="btn" href="https://link.amazon/B0eiilbFl" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
+<li id="liners" class="latest"><a class="pic" href="https://link.amazon/B00vELJEP" rel="sponsored noopener" target="_blank"><img src="p-liners.jpg" alt="Roe Tenpo air fryer liners, 100 sheets, product image from the Amazon UK listing" width="300" height="300" decoding="async"></a><p class="meta">From the latest video</p><p class="name">Roe Tenpo Air Fryer Liners, 100 sheets</p><a class="btn" href="https://link.amazon/B00vELJEP" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
+<li id="dehumidifier"><a class="pic" href="https://link.amazon/B07TpjWH4" rel="sponsored noopener" target="_blank"><img src="p-ansio.jpg" alt="ANSIO interior dehumidifier moisture absorbers, pack of 10, product image from the Amazon UK listing" width="300" height="300" loading="lazy" decoding="async"></a><p class="meta">Video coming soon</p><p class="name">ANSIO Dehumidifier, pack of 10</p><a class="btn" href="https://link.amazon/B07TpjWH4" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
+<li id="washing-machine-cleaner"><a class="pic" href="https://link.amazon/B03H61PQs" rel="sponsored noopener" target="_blank"><img src="p-beckmann.jpg" alt="Dr. Beckmann Service-it Deep Clean washing machine cleaner box, product image from the Amazon UK listing" width="300" height="300" loading="lazy" decoding="async"></a><p class="meta">Video coming soon</p><p class="name">Dr. Beckmann Service-it Deep Clean washing machine cleaner, 250 g</p><a class="btn" href="https://link.amazon/B03H61PQs" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
+<li id="vacuum-bags"><a class="pic" href="https://link.amazon/B03OlZ3aH" rel="sponsored noopener" target="_blank"><img src="p-vacuum-bags.jpg" alt="Amazon Basics vacuum storage bags with hand pump, product image from the Amazon UK listing" width="300" height="300" loading="lazy" decoding="async"></a><p class="meta">Video coming soon</p><p class="name">Amazon Basics vacuum storage bags, medium, 5-pack</p><a class="btn" href="https://link.amazon/B03OlZ3aH" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
+<li id="glowhite"><a class="pic" href="https://link.amazon/B0eiilbFl" rel="sponsored noopener" target="_blank"><img src="p-glowhite.jpg" alt="Dr. Beckmann Glowhite in-wash sachets box, product image from the Amazon UK listing" width="300" height="300" loading="lazy" decoding="async"></a><p class="meta">Video live now</p><p class="name">Dr. Beckmann Glowhite in-wash sachets, 5 x 40 g</p><a class="btn" href="https://link.amazon/B0eiilbFl" rel="sponsored noopener" target="_blank">View on Amazon UK</a></li>
 </ul>
 </main>
 <footer><p class="note">As an Amazon Associate I earn from qualifying purchases.</p></footer>
